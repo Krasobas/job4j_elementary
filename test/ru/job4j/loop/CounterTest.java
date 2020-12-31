@@ -17,4 +17,10 @@ public class CounterTest {
         int result = Counter.sum(3, 6);
         assertThat(result, is(18));
     }
+
+    @Test
+    public void whenStart4Finish7Then22() {
+        int result = Counter.sum(4, 7);
+        assertThat(result, is(22));
+    }
 }
