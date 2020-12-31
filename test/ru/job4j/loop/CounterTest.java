@@ -11,4 +11,10 @@ public class CounterTest {
         int result = Counter.sum(0, 5);
         assertThat(result, is(15));
     }
+
+    @Test
+    public void whenStart3Finish6Then18() {
+        int result = Counter.sum(3, 6);
+        assertThat(result, is(18));
+    }
 }
