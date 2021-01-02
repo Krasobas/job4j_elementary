@@ -23,4 +23,18 @@ public class CounterTest {
         int result = Counter.sum(4, 7);
         assertThat(result, is(22));
     }
+
+    @Test
+    public void whenSumEvenNumbersFromOneToTenThenThirty() {
+        int rsl = Counter.sumByEven(1, 10);
+        int expected = 30;
+        assertThat(rsl, is(expected));
+    }
+
+    @Test
+    public void whenSumEvenNumbersFromElevenToTwentyThenEighty() {
+        int rsl = Counter.sumByEven(11, 20);
+        int expected = 80;
+        assertThat(rsl, is(expected));
+    }
 }
