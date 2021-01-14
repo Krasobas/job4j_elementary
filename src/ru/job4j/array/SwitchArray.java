@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+import java.awt.image.WritableRaster;
+
 public class SwitchArray {
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
@@ -11,8 +13,8 @@ public class SwitchArray {
     public static void main(String[] args) {
         int[] nums = new int[] {1, 2, 3, 4, 5, 6};
         int[] rsl = swapBorder(nums);
-        for (int element : rsl) {
-            System.out.println(element);
+        for (int el : rsl) {
+            System.out.println(el);
         }
     }
 }
