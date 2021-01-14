@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.awt.image.WritableRaster;
-
 public class SwitchArray {
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
