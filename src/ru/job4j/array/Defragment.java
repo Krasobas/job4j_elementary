@@ -8,7 +8,7 @@ public class Defragment {
                 for (int notNullIndex = nullIndex; notNullIndex < array.length; notNullIndex++) {
                     if (array[notNullIndex] != null) {
                         array = SwitchArray.swap(array, nullIndex, notNullIndex);
-                        nullIndex++;
+                        break;
                     }
                 }
             }
