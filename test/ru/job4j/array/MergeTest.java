@@ -66,4 +66,14 @@ public class MergeTest {
         );
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenEqual() {
+        int[] expect = {1, 1, 2, 2, 3, 3, 4, 4};
+        int[] result = Merge.merge(
+                new int[] {1, 2, 3, 4},
+                new int[] {1, 2, 3, 4}
+        );
+        assertThat(result, is(expect));
+    }
 }
