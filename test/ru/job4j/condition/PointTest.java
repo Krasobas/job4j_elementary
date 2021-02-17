@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import org.junit.Assert;
@@ -40,6 +39,24 @@ public class PointTest {
         Point a = new Point(12, 0);
         Point b = new Point(0, 5);
         double out = a.distance(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when000to111then1point73() {
+        double expected = 1.73;
+        Point a = new Point(1, 1, 1);
+        Point b = new Point(0, 0, 0);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when3m33to223then5point09() {
+        double expected = 5.09;
+        Point a = new Point(2, 2, 3);
+        Point b = new Point(3, -3, 3);
+        double out = a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
